@@ -20,7 +20,7 @@ class Chronometer {
     let formattedTime = Math.floor(this.currentTime / 60).toString().padStart(2, '0') + 
     ':' + Math.floor(this.currentTime % 60).toString().padStart(2, '0');
 
-    console.log(formattedTime);
+    //console.log(formattedTime);
     
     return formattedTime;
   }
@@ -31,6 +31,8 @@ class Chronometer {
     this.currentTime = 0;
   }
   splitClick() {
-    // ... your code goes here
+    let formattedTime = Math.floor(this.currentTime / 60).toString().padStart(2, '0') + 
+    ':' + Math.floor(this.currentTime % 60).toString().padStart(2, '0');
+    return formattedTime;
   }
 }
